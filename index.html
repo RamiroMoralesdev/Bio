@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="eS">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -10,18 +10,43 @@
 
     <style>
         .link-bio:any-link {
-            color: green;
+            color: orange;
             transition: all .5s;
 
             &:hover {
-                color: white;
+                color: #ffffff;
             }
+
+        }
+
+        .bg-orange {
+            background-color: orange;
+        }
+
+        .orange {
+            color: orange;
+        }
+
+        .link-button:any-link {
+            color: white;
+            background-color: orange;
+            transition: all .5s;
+
+            &:hover {
+                background-color: white;
+                color: orange;
+            }
+        }
+
+        .text-underline {
+            text-decoration: underline orange;
+
         }
     </style>
 </head>
 
-<body class="bg-black text-white">
-    <nav class="container bg-black text-white justify-content-center">
+<body class=" text-black">
+    <nav class="container text-white justify-content-center">
         <h1 class="w-100 bg-white text-black container-fluid d-flex justify-content-center text-nowrap">Ramiro Morales
         </h1>
         <div>
@@ -58,13 +83,32 @@
         </div>
     </section>
 
-    <section class="container col-4">
-        <a href="https://ramiromorales.tech/" target="_blank"><img src="./assets/favicon transparent.png"
-                alt="RamiroMoralesdev" title="RamiroMoralesdev" class="w-100"
-                style="filter: drop-shadow(10px 10px 20px white);"></a>
+    <section class="container col-12">
 
-        <a href="https://elblogdepelis.vercel.app/" target="_blank"><img src="./assets/favicon bdp.png"
-                alt="El Blog De Pelis" title="El Blog De Pelis" class="w-100"></a>
+
+        <div class="mb-4">
+
+            <a href="https://ramiromorales.tech/" target="_blank"
+                class="fs-2  p-3 mb-4 link-button d-flex  justify-content-center">RamiroMoralesdev</a>
+
+            <a href="https://elblogdepelis.vercel.app/" target="_blank"
+                class="fs-2  p-3 mb-4 link-button d-flex justify-content-center">El Blog De Pelis</a>
+
+            <a href="https://spark-hospital-2b9.notion.site/Libros-Y-Cursos-d7c4a6c94f89486894e1fb5be238cab9?pvs=4"
+                target="_blank" class="fs-2  p-3 mb-4 link-button d-flex justify-content-center">Libros Y Cursos</a>
+
+
+
+
+
+
+        </div>
+
+        <div>
+            <a class="text-black text-underline fs-2 d-flex justify-content-center mb-4"
+                href="https://vsco.co/ramigenio/" target="_blank">Ramiro Morales Fotografia</a>
+
+        </div>
 
 
     </section>
