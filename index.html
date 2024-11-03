@@ -44,6 +44,12 @@
 
         }
 
+        section img {
+            width: 25%;
+            object-fit: contain;
+        }
+
+
         .layout-hobbies {
             display: flex;
             justify-content: center;
@@ -57,6 +63,17 @@
         @media  screen and (max-width: 768px) {
             .layout-hobbies {
                 flex-direction: column;
+                margin-top: 400px;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+
+                & img {
+                    width: 100%;
+                    margin: 0;
+                }
             }
         }
 
@@ -86,6 +103,7 @@
     .hobby-item:hover .overlay {
     opacity: 1;
     }
+
 
     </style>
 </head>
@@ -162,7 +180,7 @@
     </section>
     
     <h3 class="text-center">Un poco mas sobre mi...</h3>
-    <section class="d-flex ">
+    <section class="d-flex justify-content-center align-items-center">
         <div class="w-50 fs-4 text-center">
             <p><strong>Nombre: </strong> Ramiro J. Morales</p>
             <p><strong>Edad: </strong>18</p>
@@ -173,41 +191,41 @@
             <p><strong>Pelicula Favorita: </strong>Rapidos Y Furiosos</p>
             <p><strong>Cancion Favorita: </strong>Dont Stop Believing - Journey</p>
         </div>
-        <img class="me-5" style="width: 25%; object-fit: contain;" src="59F6C3E9-4EE2-4810-A6D4-8F7FFBB07796 (1).jpg" alt="Ramiro Morales">
+        <img class=""  src="59F6C3E9-4EE2-4810-A6D4-8F7FFBB07796 (1).jpg" alt="Ramiro Morales">
     </section>
 
     <br><br>
     <br><br>
     
-
-    <h3 class="text-center">HOBBIES</h3>
-
-    <section class="layout-hobbies">
-          <div class="col-md-4 hobby-item position-relative">
-            <img src="./assets/39efa1e0-b29a-4c37-a0f0-ea55ab0420f18407828054549477709.jpg" alt="Piano">
-            <div class="overlay">Piano</div>
-          </div>
-          <div class="col-md-4 hobby-item position-relative">
-            <img src="./assets/vsco_031923.jpg" alt="Calistenia">
-            <div class="overlay">Calistenia</div>
-          </div>
-        </div>
-      </section>
-
-<br> <br>
-<br><br>
       <h3 class="text-center">Setup</h3>
-      <section class="d-flex ">
-          <div class="w-50 fs-4 d-flex flex-column justify-content-center align-items-center">
-              <p><strong>PC: </strong> Ryzen 5 3600 + GTX 1660TI + 16GB</p>
-              <p><strong>Laptop: </strong>HP Victus </p>
-              <p><strong>Perifericos: </strong>T-Dagger</p>
-              <p><strong>IDE: </strong>Vscode</p>
+     <section class="d-flex justify-content-center align-items-center">
+    <div class="w-50 text-center fs-4 d-flex flex-column justify-content-center align-items-center">
+        <p><strong>PC: </strong> Ryzen 5 3600 + GTX 1660TI + 16GB</p>
+        <p><strong>Laptop: </strong>HP Victus {AMD Ryzen™ 5 8645HS + NVIDIA GeForce RTX™ 4050 Laptop GPU + 16GB}</p>
+        <p><strong>Periféricos: </strong>T-Dagger</p>
+        <p><strong>IDE: </strong>Vscode</p>
+    </div>
+    <img class="h-auto" src="./assets/vsco_062523.jpg" alt="Ramiro Morales">
+</section>
 
-          </div>
-          <img class="me-5" style="width: 25%; object-fit: contain;" src="./assets/vsco_062523.jpg" alt="Ramiro Morales">
-      </section>
-      
+<br><br>
+<br><br>
+
+<h3 class="text-center">HOBBIES</h3>
+
+<section class="layout-hobbies">
+      <div class="col-md-4 hobby-item position-relative">
+        <img src="./assets/39efa1e0-b29a-4c37-a0f0-ea55ab0420f18407828054549477709.jpg" alt="Piano">
+        <div class="overlay">Piano</div>
+      </div>
+      <div class="col-md-4 hobby-item position-relative">
+        <img src="./assets/vsco_031923.jpg" alt="Calistenia">
+        <div class="overlay">Calistenia</div>
+      </div>
+    </div>
+  </section>
+  
+   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
