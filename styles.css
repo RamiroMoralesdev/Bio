@@ -1,0 +1,55 @@
+.content {
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .profile {
+        order: 3;
+    }
+    
+}
+
+section {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+h1,h2,h3 { 
+    text-align: center;
+}
+
+.layout-hobbies {
+    display: flex;
+    gap: 3px;
+}
+
+.profile p {
+    background-color: yellow;
+}
+
+.webs a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 10px;
+    margin: 10px;
+}

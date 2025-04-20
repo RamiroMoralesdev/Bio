@@ -1,229 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ramiro Morales</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="shortcut icon" href="assets/favicon transparent.png" type="image/x-icon">
-
-    <style>
-        .link-bio:any-link {
-            color: orange;
-            transition: all .5s;
-
-            &:hover {
-                color: #ffffff;
-            }
-
-        }
-
-        .bg-orange {
-            background-color: orange;
-        }
-
-        .orange {
-            color: orange;
-        }
-
-        .link-button:any-link {
-            color: white;
-            background-color: orange;
-            transition: all .5s;
-
-            &:hover {
-                background-color: white;
-                color: orange;
-            }
-        }
-
-        .text-underline {
-            text-decoration: underline orange;
-
-        }
-
-        section img {
-            width: 25%;
-            object-fit: contain;
-        }
-
-
-        .layout-hobbies {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 4;
-            width: 100vw;
-            height: 100vh;
-            margin-top: 100px;
-        }
-
-        @media  screen and (max-width: 768px) {
-            .layout-hobbies {
-                flex-direction: column;
-                margin-top: 400px;
-            }
-
-            section {
-                display: flex;
-                flex-direction: column;
-
-                & img {
-                    width: 100%;
-                    margin: 0;
-                }
-            }
-        }
-
-        .hobby-item img {
-         width: 100%;
-         height: 100%;
-         transition: transform 0.5s ease;
-}
-
-
-    .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    }
-
-    .hobby-item:hover .overlay {
-    opacity: 1;
-    }
-
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramipedia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://es.wikipedia.org/static/images/icons/wikipedia.png" type="image/x-icon">
 </head>
+<body>
+    <header>
+        <img src="https://es.wikipedia.org/static/images/icons/wikipedia.png" alt="">
+        <h1>Ramipedia</h1>
+    </header>
 
-<body class=" text-black">
+    <div class="content">
 
-    <section class="container col-12 col-lg-8 ">
+     <div>
+    <section>
+        <p>Ramiro Joaquin Morales Hill (Funes, Santa Fe, 31 de Julio de 2006) es un programador, apasionado por la tecnología, el arte, la música y el crecimiento personal. Reconocido por su enfoque multifacético y su búsqueda constante de autenticidad, ha desarrollado diversos proyectos digitales que fusionan funcionalidad, diseño y propósito.</p>
 
-        <div class="mb-4 text-center">
-            <img class="w-100" src="./assets/perfil.jpeg" alt="Ramiro Morales" title="The King">
-        </div>
+        <p>
+            Ramiro se define como explorador del conocimiento, rechazando los moldes tradicionales para construir una vida genuina y libre. Cree en el poder de la autenticidad, la sensibilidad y la pasión como motores de cambio. Se considera una semilla del cambio en un mundo cada vez más mecanizado, y su meta es vivir una vida con propósito, impacto y verdad.
+            También se destaca por su inclinación filosófica y su visión existencialista de la vida, buscando siempre un propósito más allá de lo superficial. Su lema personal podría resumirse en su frase favorita: "Don't Stop Believing" - No Dejes De Creer.
+        </p>
 
-        <div class="mb-4">
-            <p>
-                Hola. Soy Ramiro Morales, un apasionado Front-end Developer con una curiosidad insaciable por la tecnología y la creatividad. Desde pequeño, las computadoras despertaron mi interés, y hoy el desarrollo web es tanto mi vocación como mi medio de expresión. <br>
-
-                Más allá del código, la música es una parte esencial de mi vida, pero no cualquier música. Soy clásico y selecto. Mi playlist está compuesta por los grandes de los 70, 80, 90 y 2000, con letras que transmiten emociones reales y melodías que cuentan historias.
-                <br>
-                También me apasionan la fotografía y la calistenia. La fotografía me permite capturar momentos únicos y congelar emociones en el tiempo, mientras que la calistenia me ha enseñado que la disciplina lo es todo. No importa cuántas veces falle, siempre me levanto y sigo adelante. No creo en los límites ni en lo imposible, solo en el esfuerzo constante y en superar cada desafío con determinación.
-                <br>
-                Creo en la creatividad, la constancia y el arte en todas sus formas. Esa es la base de todo lo que hago. <br>
-
-"Don’t Stop Believin’."
-            </p>
-        </div>
-    </section>
-
-    <section class="container col-12">
-
-
-        <div class="mb-4">
-
-            <a href="https://ramiromorales.com.ar/" target="_blank"
-                class="fs-2  p-3 mb-4 link-button d-flex  justify-content-center">RamiroMoralesdev</a>
-
-
-                <a href="https://www.rmproducciones.com.ar/" target="_blank"
-                class="fs-2  p-3 mb-4 link-button d-flex  justify-content-center">RM Producciones</a>
-
-            <a href="https://elblogdepelis.site/" target="_blank"
-                class="fs-2  p-3 mb-4 link-button d-flex justify-content-center">El Blog De Pelis</a>
-
-            <a href="https://spark-hospital-2b9.notion.site/Libros-Y-Cursos-d7c4a6c94f89486894e1fb5be238cab9?pvs=4"
-                target="_blank" class="fs-2  p-3 mb-4 link-button d-flex justify-content-center">Libros Y Cursos</a>
-
-
-        </div>
-
-        <div>
-            <a class="text-black text-underline fs-2 d-flex justify-content-center mb-4"
-                href="https://vsco.co/ramigenio/" target="_blank">Ramiro Morales Fotografia</a>
-
-                <a class="text-black text-underline fs-2 d-flex justify-content-center mb-4"
-                href="https://www.tiktok.com/@ramigenio" target="_blank">Tiktok</a>
-
-        </div>
-
-
-    </section>
-    
-    <h3 class="text-center">Un poco mas sobre mi...</h3>
-    <section class="d-flex justify-content-center align-items-center">
-        <div class="w-50 fs-4 text-center">
-            <p><strong>Nombre: </strong> Ramiro J. Morales</p>
-            <p><strong>Edad: </strong>18</p>
-            <p><strong>Nacimiento: </strong>31/07/2006</p>
-            <p><strong>Signo Zodiacal: </strong>Leo</p>
-            <p><strong>Color: </strong>Negro</p>
-            <p><strong>Pelicula Favorita: </strong>Rapidos Y Furiosos</p>
-            <p><strong>Cancion Favorita: </strong>Dont Stop Believing - Journey</p>
-        </div>
-        <img class=""  src="./assets/genio.jpeg" alt="Ramiro Morales">
-    </section>
-
-    <br><br>
-    <br><br>
-    
-      <h3 class="text-center">Setup</h3>
-     <section class="d-flex justify-content-center align-items-center">
-    <div class="w-50 text-center fs-4 d-flex flex-column justify-content-center align-items-center">
-        <p><strong>PC: </strong> Ryzen 5 3600 + GTX 3060 + 16GB</p>
-        <p><strong>Laptop: </strong>HP Victus {AMD Ryzen™ 5 8645HS + NVIDIA GeForce RTX™ 4050 Laptop GPU + 16GB}</p>
-        <p><strong>Periféricos: </strong>T-Dagger</p>
-        <p><strong>IDE: </strong>Vscode {Theme: Fito Theme}</p>
+        <div class="profile">
+        <h2>Ramiro Morales</h2>
+        <img src="./assets/perfil.jpeg" alt="Foto de Ramiro Morales">
+        <p>Un poco mas sobre mi...</p>
+        <ol>
+            <li>Nombre: Ramiro Morales</li>
+            <li>Edad: 18 años</li>
+            <li>Fecha de Nacimiento: 31 de Julio de 2006</li>
+            <li>Signo Zodiacal: Leo</li>
+            <li>Pelicula Favorita: Rapidos Y Furiosos</li>
+            <li>Serie Favorita: Mr Robot</li>
+            <li>Cantante Favorito: Luis Miguel</li>
+        </ol>
     </div>
-    <img class="h-auto" src="./assets/vsco_062523.jpg" alt="Ramiro Morales">
-</section>
+    
 
-<br><br>
-<br><br>
+    
 
-<h3 class="text-center">HOBBIES</h3>
+    <section>
+        <h2>Redes Sociales</h2>
+        <a href="https://www.instagram.com/ramigenio/"><img src="" alt=""></a>
+        <a href="https://www.instagram.com/elramaaaaaaa_/"><img src="" alt=""></a>
+        <a href="https://vsco.co/ramigenio/"><img src="" alt=""></a>
+        <a href="https://www.tiktok.com/@ramigenio/"><img src="" alt=""></a>
+        <a href=""><img src="" alt=""></a>
+    </section>
 
-<section class="layout-hobbies">
-      <div class="col-md-4 hobby-item position-relative">
-        <img src="./assets/camera.jpg" alt="Fotografia">
-        <div class="overlay">Fotografia</div>
-      </div>
-      
-      <div class="col-md-4 hobby-item position-relative">
-        <img src="./assets/vsco_031923.jpg" alt="Calistenia">
-        <div class="overlay">Calistenia</div>
-      </div>
-        
+    <section class="webs">
+        <h2>Esto es lo que soy</h2>
+        <a href="https://ramiromorales.com.ar/">RamiroMoralesdev</a>
+        <a href="https://elblogdepelis.site/">El Blog De Pelis</a>
+        <a href="https://spark-hospital-2b9.notion.site/Libros-Y-Cursos-d7c4a6c94f89486894e1fb5be238cab9?pvs=4">Libros Y Cursos</a>
+    </section>
 
-      
+    <section>
+        <h2>Hobbies</h2>
 
-  </section>
-  
-   
+        <section class="layout-hobbies">
+            <div class="col-md-4 hobby-item position-relative">
+              <img src="./assets/camera.jpg" alt="Fotografia">
+              <div class="overlay">Fotografia</div>
+            </div>
+            
+            <div class="col-md-4 hobby-item position-relative">
+              <img src="./assets/vsco_031923.jpg" alt="Calistenia">
+              <div class="overlay">Calistenia</div>
+            </div>      
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        </section>
 
 
-        <script>
-            window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-          </script>
-          <script defer src="/_vercel/insights/script.js"></script>
+    </section>
+
+</div>
+
+    
+
+    </div>
 </body>
-
 </html>
