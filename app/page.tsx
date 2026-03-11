@@ -1,0 +1,128 @@
+import { LinkCard } from "@/components/link-card"
+
+const socialLinks = [
+  {
+    href: "https://www.instagram.com/ramigenio/",
+    title: "Instagram",
+    description: "@ramigenio",
+    icon: (
+      <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+    ),
+  },
+  {
+    href: "https://www.tiktok.com/@ramigenio",
+    title: "TikTok",
+    description: "@ramigenio",
+    icon: (
+      <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+      </svg>
+    ),
+  },
+  {
+    href: "https://www.linkedin.com/in/ramimorales/",
+    title: "LinkedIn",
+    description: "Ramiro Morales",
+    icon: (
+      <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </svg>
+    ),
+  },
+]
+
+const projectLinks = [
+  {
+    href: "https://ramiromorales.com.ar/",
+    title: "Portfolio Web",
+    description: "Programador Web",
+    icon: (
+      <img src="rm.png" alt="" />
+    ),
+  },
+  {
+    href: "https://www.instagram.com/genesis.gym.funes/",
+    title: "Genesis Gym",
+    description: "Gimnasio en Funes",
+    icon: (
+      <img src="/gg.png" alt="" />
+    ),
+  },
+  {
+    href: "https://gym-core-web.vercel.app/",
+    title: "GymCore Software",
+    description: "Sistema de gestion para gimnasios",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dumbbell h-5 w-5 text-primary-foreground"><path d="M14.4 14.4 9.6 9.6"/><path d="M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z"/><path d="m21.5 21.5-1.4-1.4"/><path d="M3.9 3.9 2.5 2.5"/><path d="M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z"/></svg>
+    ),
+  },
+]
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-background px-4 py-12">
+      <div className="mx-auto max-w-md">
+        {/* Avatar */}
+        <div className="mb-6 flex justify-center">
+          <div className="relative">
+            <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 opacity-75 blur-sm animate-pulse" />
+            <div className="relative flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 text-3xl font-bold text-white shadow-xl">
+              <img src="/profile.jpg" alt="" className="rounded-full" />
+            </div>
+          </div>
+        </div>
+
+        {/* Header */}
+        <div className="mb-8 text-center">
+          <h1 className="mb-1 text-2xl font-bold tracking-tight text-foreground" style={{ fontFamily: 'var(--font-heading)' }}>
+            Ramiro Morales
+          </h1>
+          <p className="text-muted-foreground">Programador Web</p>
+        </div>
+
+        {/* Bio */}
+        <div className="relative mb-8 overflow-hidden rounded-xl border border-border bg-card p-5">
+          <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-gradient-to-br from-pink-500/20 to-purple-500/20 blur-2xl" />
+          <div className="absolute -bottom-8 -left-8 h-24 w-24 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 blur-2xl" />
+          <p className="relative text-sm leading-relaxed text-muted-foreground text-pretty">
+            Apasionado de la tecnologia, el arte y la musica. Persona curiosa, siempre aprendiendo y explorando nuevos caminos. Interesado en el crecimiento personal y la filosofia.
+          </p>
+          <p className="relative mt-4 text-center text-sm font-medium bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent italic">
+            &quot;Seguir creyendo, seguir creando y seguir creciendo&quot;
+          </p>
+        </div>
+
+        {/* Social Links */}
+        <div className="mb-8">
+          <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+            Redes Sociales
+          </h2>
+          <div className="flex flex-col gap-3">
+            {socialLinks.map((link) => (
+              <LinkCard key={link.href} {...link} />
+            ))}
+          </div>
+        </div>
+
+        {/* Projects */}
+        <div className="mb-8">
+          <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+            Proyectos
+          </h2>
+          <div className="flex flex-col gap-3">
+            {projectLinks.map((link) => (
+              <LinkCard key={link.href} {...link} />
+            ))}
+          </div>
+        </div>
+
+        {/* Footer */}
+        <footer className="text-center text-xs text-muted-foreground">
+          <p>Hecho con dedicacion</p>
+        </footer>
+      </div>
+    </main>
+  )
+}
