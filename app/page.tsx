@@ -39,7 +39,7 @@ const projectLinks = [
     title: "Portfolio Web",
     description: "Programador Web",
     icon: (
-      <img src="rm.png" alt="" />
+      <img src="/favicon_transparent.png" alt="" />
     ),
   },
   {
@@ -62,13 +62,14 @@ const projectLinks = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background px-4 py-12">
+    <main className="min-h-screen bg-background ">
+      <img className="w-32 mt-0 mb-0" src="/favicon_transparent.png" alt="" />
       <div className="mx-auto max-w-md">
         {/* Avatar */}
         <div className="mb-6 flex justify-center">
           <div className="relative">
-            <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 opacity-75 blur-sm animate-pulse" />
-            <div className="relative flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-pink-500 via-purple-500 to-indigo-500 text-3xl font-bold text-white shadow-xl">
+            <div className="absolute -inset-1 rounded-full " />
+            <div className="relative flex h-24 w-24 items-center justify-center rounded-full text-3xl font-bold text-white shadow-xl">
               <img src="/profile.jpg" alt="" className="rounded-full" />
             </div>
           </div>
@@ -76,27 +77,29 @@ export default function Home() {
 
         {/* Header */}
         <div className="mb-8 text-center">
-          <h1 className="mb-1 text-2xl font-bold tracking-tight text-foreground" style={{ fontFamily: 'var(--font-heading)' }}>
+          <h1 className="mb-1 text-3xl font-bold tracking-tight text-foreground" style={{ fontFamily: 'var(--font-heading)' }}>
             Ramiro Morales
           </h1>
-          <p className="text-muted-foreground">Programador Web</p>
+          <p className="text-muted-foreground">Programador, Emprendedor y Motivador Fitness</p>
         </div>
 
         {/* Bio */}
         <div className="relative mb-8 overflow-hidden rounded-xl border border-border bg-card p-5">
-          <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-gradient-to-br from-pink-500/20 to-purple-500/20 blur-2xl" />
-          <div className="absolute -bottom-8 -left-8 h-24 w-24 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 blur-2xl" />
+          <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-gradient-to-br from-yellow-400/20 to-amber-400/20 blur-2xl" />
+          <div className="absolute -bottom-8 -left-8 h-24 w-24 rounded-full bg-gradient-to-br from-orange-300/20 to-yellow-200/20 blur-2xl" />
           <p className="relative text-sm leading-relaxed text-muted-foreground text-pretty">
-            Apasionado de la tecnologia, el arte y la musica. Persona curiosa, siempre aprendiendo y explorando nuevos caminos. Interesado en el crecimiento personal y la filosofia.
+            Construyo mi propio camino. <br />
+            Explorador del conocimiento, rechazo los moldes tradicionales para construir una vida genuina y libre
+
           </p>
-          <p className="relative mt-4 text-center text-sm font-medium bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent italic">
-            &quot;Seguir creyendo, seguir creando y seguir creciendo&quot;
+          <p className="relative mt-4 text-center text-sm font-medium bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-400 bg-clip-text text-transparent italic">
+            &quot;Dont Stop Believing&quot;
           </p>
         </div>
 
         {/* Social Links */}
         <div className="mb-8">
-          <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent">
             Redes Sociales
           </h2>
           <div className="flex flex-col gap-3">
@@ -108,7 +111,7 @@ export default function Home() {
 
         {/* Projects */}
         <div className="mb-8">
-          <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent">
             Proyectos
           </h2>
           <div className="flex flex-col gap-3">
