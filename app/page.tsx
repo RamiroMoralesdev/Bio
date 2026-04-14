@@ -51,7 +51,7 @@ const projectLinks = [
     ),
   },
   {
-    href: "https://gym-core-web.vercel.app/",
+    href: "https://gymcore.ar/",
     title: "GymCore Software",
     description: "Sistema de gestion para gimnasios",
     icon: (
