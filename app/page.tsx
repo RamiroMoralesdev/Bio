@@ -51,7 +51,7 @@ const projectLinks = [
     ),
   },
   {
-    href: "https://gymcore.ar/",
+    href: "https://www.instagram.com/somosgymcore/",
     title: "GymCore Software",
     description: "Sistema de gestion para gimnasios",
     icon: (
